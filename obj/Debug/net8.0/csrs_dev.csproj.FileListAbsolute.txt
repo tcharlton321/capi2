@@ -73,3 +73,4 @@
 /home/aspire/dev/csrs/csrs_dev/obj/Debug/net8.0/csrs_dev.pdb
 /home/aspire/dev/csrs/csrs_dev/obj/Debug/net8.0/csrs_dev.genruntimeconfig.cache
 /home/aspire/dev/csrs/csrs_dev/obj/Debug/net8.0/ref/csrs_dev.dll
+/home/aspire/dev/csrs/csrs_dev/obj/Debug/net8.0/csrs_dev.sourcelink.json

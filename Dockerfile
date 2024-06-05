@@ -1,5 +1,5 @@
-# docker build . -f Dockerfile.jj -t tim-container && docker run -p 8080:8080 tim-container
-# curl -i localhost:8080/api/Guest/getGuest/1
+# docker build . -t csrs-dev:latest && docker run -p 8080:8080 csrs-dev:latest
+# docker build . -t csrs-dev:latest && docker image push caesarsapi20240602161401.azurecr.io/csrs-dev:latest 
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS base
 WORKDIR /src
@@ -11,4 +11,5 @@ RUN dotnet publish "csrs_dev.csproj" -c Release -o /app/publish /p:UseAppHost=fa
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 as final
 WORKDIR /app
 COPY --from=base /app/publish .
+ENV ASPNETCORE_HTTP_PORTS=http://+:80
 ENTRYPOINT ["dotnet", "csrs_dev.dll"]

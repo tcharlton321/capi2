@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("csrs_dev")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2de89429e17fffd25647110e3b3aa6bcd464b6d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c80127a538a3cc6cb25c9a6a3fc27c9c6bb94ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("csrs_dev")]
 [assembly: System.Reflection.AssemblyTitleAttribute("csrs_dev")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
