@@ -1,6 +1,6 @@
 To use this app run the commands commented in the top of the docker file.
 In postman make a login request and then use the bearer token it produces as your auth for hitting all other endpoints.
-TODO: add endpoints to readme
+https://api.postman.com/collections/35358265-8d96ae3a-f8ab-400e-8657-3ceeecde8a24?access_key=PMAT-01HZKF8V8NX0ZX99PSHFFBG26C
 
 
 Database ddl
