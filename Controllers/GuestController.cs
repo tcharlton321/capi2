@@ -64,7 +64,7 @@ namespace CaesarsAPI.Controllers
         }
 
         // POST api/<GuestController>
-        [HttpPost]
+        [HttpPost("newGuest")]
         public void Post([FromBody] JsonObject value)
         {
             string error = null;
