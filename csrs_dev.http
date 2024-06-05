@@ -1,0 +1,6 @@
+@csrs_dev_HostAddress = http://localhost:5124
+
+GET {{csrs_dev_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
