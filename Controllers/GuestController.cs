@@ -12,7 +12,7 @@ using Microsoft.Extensions.Caching.Memory;
 namespace CaesarsAPI.Controllers
 {
     [Authorize]
-    [Route("api/Guest")]
+    [Route("api")]
     [ApiController]
     public class GuestController : ControllerBase
     {
@@ -32,7 +32,7 @@ namespace CaesarsAPI.Controllers
         }
 
         // GET api/<GuestController>/getGuest/5
-        [HttpGet("/getGuest/{id}")]
+        [HttpGet("getGuest/{id}")]
         public ActionResult Get(int id)
         {
             Guest? guest = _cache.GetOrCreate(id, entry =>
@@ -52,7 +52,7 @@ namespace CaesarsAPI.Controllers
         }
 
         // GET api/<GuestController>/search
-        [HttpGet("/search")]
+        [HttpGet("search")]
         public ActionResult Search([FromQuery] string wildcard, [FromQuery] int max, [FromQuery] int offset)
         {
             DB_manager dbMan = new DB_manager();
@@ -93,7 +93,7 @@ namespace CaesarsAPI.Controllers
         }
 
         // Patch api/<GuestController>/5
-        [HttpPatch("/updateGuest/{id}")]
+        [HttpPatch("updateGuest/{id}")]
         public void Patch(int id, [FromBody] JsonObject value)
         {
             int affectedRows = 0; // a check variable to verify that a row was changed, if a row isnt changed then we should possibly present that info to the user or invalidate an optimistic update.
@@ -136,7 +136,7 @@ namespace CaesarsAPI.Controllers
         }
 
         // DELETE api/<GuestController>/5
-        [HttpDelete("/deleteGuest/{id}")]
+        [HttpDelete("deleteGuest/{id}")]
         public void Delete(int id)
         {
             DB_manager dbMan = new DB_manager();
